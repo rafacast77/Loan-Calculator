@@ -18,7 +18,12 @@ document.querySelector('.loan-form').addEventListener('submit', function (e) {
   loading_EL.style.display = 'block';
   results_EL.style.display = 'none';
   calculateBtn_EL.disabled = 'true';
-  calculateLoan();
+  // Dismisses the loader and brings the results
+  setTimeout(function () {
+    calculateLoan();
+    calculateBtn_EL.removeAttribute('disabled');
+  }, 2000);
+
   e.preventDefault();
 });
 
@@ -38,18 +43,11 @@ function calculateLoan(e) {
     totalInterest_EL.value = (monthly * calculatedPayments - principal).toFixed(
       2
     );
-    // Dismisses the loader and brings the results
-    setTimeout(function () {
-      loading_EL.style.display = 'none';
-      results_EL.style.display = 'block';
-      calculateBtn_EL.removeAttribute('disabled');
-    }, 3000);
+    loading_EL.style.display = 'none';
+    results_EL.style.display = 'block';
   } else {
-    // Dismisses the loader and pops error message
-    setTimeout(function () {
-      loading_EL.style.display = 'none';
-      alertMessage();
-    }, 1500);
+    loading_EL.style.display = 'none';
+    alertMessage();
   }
 }
 
