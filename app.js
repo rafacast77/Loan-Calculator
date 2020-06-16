@@ -23,7 +23,6 @@ document.querySelector('.loan-form').addEventListener('submit', function (e) {
     calculateLoan();
     calculateBtn_EL.removeAttribute('disabled');
   }, 2000);
-
   e.preventDefault();
 });
 
