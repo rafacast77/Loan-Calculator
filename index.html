@@ -1,0 +1,149 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+      #loading,
+      #results {
+        display: none;
+      }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body style="background-color: #404e5c;">
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12 col-md-9 col-lg-7 col-xl-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 style="color: #404e5c;" class="card-title">Loan Calculator</h1>
+            <form class="loan-form pt-4 pb-4">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Loan Amount"
+                    id="amount"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">%</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Interest"
+                    id="interest"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="years"
+                  placeholder="Years To Repay"
+                />
+              </div>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="btn btn-block btn-lg"
+                  style="background-color: #39a2ae;"
+                  id="calculate"
+                >
+                  <strong style="color: #f1f5f8;">Calculate</strong>
+                </button>
+              </div>
+            </form>
+            <div id="loading">
+              <img src="/img/loader.gif" alt="" />
+            </div>
+            <div id="results">
+              <h3 style="color: #404e5c;" class="card-tittle">Results</h3>
+              <div class="form-group pt-1">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Monthly Payment</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="monthly-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total Payment</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total interest</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-interest"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
