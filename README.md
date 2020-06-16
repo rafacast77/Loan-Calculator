@@ -8,7 +8,7 @@ This application allows you to pick a amount of money as a loan variable, the pe
 * **Bootstrap Framework:** I have used this framework to learn more about it's use and functionality
    * Grid system manipulation for responsive interface.
    * Cards, Buttons, input-Forms, input-groups, alerts.
-* **Color pallette :** :art: 
+* **Color palette :** :art: 
 
 
 
