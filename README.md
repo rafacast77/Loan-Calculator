@@ -1,16 +1,13 @@
 # Loan-Calculator   :moneybag:   
-This is a task list application, it allows you to add tasks which are saved in local storage in your browser. You can also filter to
-find specific tasks, delete sigle tasks and delete all tasks.
+This application allows you to pick a amount of money as a loan variable, the percentage of interest and the time to repay the loan in years. It returns the monthly fee, total to repay and total interest.
 ## Technologies and techniques used for this project
 * **HTML 5**
 * **CSS**
-* **DOM manipulation with vanilla JavaScript :** I have used Vanilla JavaScript to practice DOM manipulation without a framework and improve my skills in the language.
-   * Event delegation
-   * Local Storage
+* **DOM manipulation with vanilla JavaScript :** I have used Vanilla JavaScript to practice DOM manipulation to improve my skills on the language.
    * DOM Stryles, Events, Element, Document, Window.
-* **Materialize Framework from Google :** I have used this framework because is widely used for android application which is the look intended for this project
+* **Bootstrap Framework:** I have used this framework to learn more about it's use and functionality
    * Grid system manipulation for responsive interface.
-   * Cards, Buttons, Icons, Collections, Forms, Toast.
+   * Cards, Buttons, input-Forms, input-groups, alerts.
 * **Color pallette :** :art: 
 
 
