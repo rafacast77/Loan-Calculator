@@ -14,6 +14,6 @@ This application allows you to pick a amount of money as a loan variable, the pe
 
 
 
-![Colors](images/task_list_color_palette.png?raw=true "Color Palette")
+![Colors](img/Loan_calculator_color_palette.png?raw=true "Color Palette")
 
 
